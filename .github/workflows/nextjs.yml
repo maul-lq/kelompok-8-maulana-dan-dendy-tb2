@@ -38,11 +38,15 @@ jobs:
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
+            echo "build_cmd=yarn next build" >> $GITHUB_OUTPUT
+            echo "export_cmd=yarn next export" >> $GITHUB_OUTPUT
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npm" >> $GITHUB_OUTPUT
+            echo "build_cmd=npx next build" >> $GITHUB_OUTPUT
+            echo "export_cmd=npx next export" >> $GITHUB_OUTPUT
             exit 0
           else
             echo "Unable to determine package manager"
@@ -75,9 +79,9 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.build_cmd }}
       - name: Export static site
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+        run: ${{ steps.detect-package-manager.outputs.export_cmd }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
