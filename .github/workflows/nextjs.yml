@@ -80,6 +80,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.build_cmd }}
+      # Copy public assets to out directory
+      - name: Copy public assets
+        run: cp -r public ./out/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
