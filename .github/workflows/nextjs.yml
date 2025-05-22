@@ -80,8 +80,6 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.build_cmd }}
-      - name: Export static site
-        run: ${{ steps.detect-package-manager.outputs.export_cmd }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
