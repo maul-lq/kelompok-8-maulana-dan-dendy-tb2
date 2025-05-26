@@ -10,18 +10,23 @@ export default function Navbar({ activeIndex }) {
                     <tbody>
                         <tr>
                             <td>
-                                <h1 className={style.headerTitle}>
-                                    <Image src="favicon.svg" alt="ikon" className={style.headerImg} width={65} height={65} />RFz - Halaman Utama
+                                <h1 className={style.headerTitle} style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    flexWrap: "nowrap",
+                                    flexDirection: "row",
+                                    gap: "10px",
+                                }}>
+                                    <Image style={{ borderRadius: "100%" }} src="/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} /> Halaman Utama
                                 </h1>
                             </td>
                             <td>
                                 <nav className={style.nav}>
                                     <ul>
-                                        <li><Link className={activeIndex === 0 ? style.active : ''} href="index.html">Beranda</Link></li>
-                                        <li><Link className={activeIndex === 1 ? style.active : ''} href="personal.html">Informasi Personal</Link></li>
-                                        <li><Link className={activeIndex === 2 ? style.active : ''} href="keluarga.html">Informasi Keluarga</Link></li>
-                                        <li><Link className={activeIndex === 3 ? style.active : ''} href="teman.html">Informasi Teman</Link></li>
-                                        <li><Link className={activeIndex === 4 ? style.active : ''} href="hobi.html">Informasi Hobi</Link></li>
+                                        <li><Link className={activeIndex === 0 ? style.active : ''} href="/">Home</Link></li>
+                                        <li><Link className={activeIndex === 1 ? style.active : ''} href="/aktifitas">Pilihan Aktifitas</Link></li>
+                                        <li><Link className={activeIndex === 2 ? style.active : ''} href="/camp_ground">Camp Ground</Link></li>
+                                        <li><Link className={activeIndex === 3 ? style.active : ''} href="/contacts">Contacts</Link></li>
                                     </ul>
                                 </nav>
                             </td>
@@ -29,6 +34,6 @@ export default function Navbar({ activeIndex }) {
                     </tbody>
                 </table>
             </header>
-        </div>
+        </div >
     );
 }
