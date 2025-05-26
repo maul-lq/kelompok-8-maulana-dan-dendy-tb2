@@ -5,7 +5,7 @@ import Navbar from "./navbar";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Navbar />
+      <Navbar activeIndex={0}/>
       <main className={styles.main}>
       </main>
       <footer className={styles.footer}>
