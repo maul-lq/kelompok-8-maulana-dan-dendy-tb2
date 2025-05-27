@@ -17,7 +17,8 @@ export default function Navbar({ activeIndex }) {
                                     flexDirection: "row",
                                     gap: "10px",
                                 }}>
-                                    <Image style={{ borderRadius: "100%" }} src="/tugas-besar-2/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} /> Halaman Utama
+                                    {/* <Image style={{ borderRadius: "100%" }} src="/tugas-besar-2/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} /> Halaman Utama */}
+                                    <Image style={{ borderRadius: "100%" }} src="/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} /> Halaman Utama
                                 </h1>
                             </td>
                             <td>
