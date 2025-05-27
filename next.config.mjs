@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // output: 'export'
+    // output: 'export',
     // basePath: '/tugas-besar-2',
     // assetPrefix: '/tugas-besar-2/',
 };
