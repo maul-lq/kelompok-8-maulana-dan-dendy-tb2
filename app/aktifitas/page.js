@@ -24,12 +24,10 @@ export default function Aktifitas() {
             {displayCoverImg("/kontak-kami.webp", "20vh",
                 {
                     topAtr: "", title: "Aktifitas di Gunung Pancar",
-                    bottomAtr: "TWA Gunung Pancar menyediakan berbagai paket sesuai kebutuhan anda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
-                })}
-
+                    bottomAtr: "TWA Gunung Pancar menyediakan berbagai paket sesuai kebutuhan anda. Jika ingin info lebih jelas bisa menghubungi kontak kami."})}
             <div className="activities-container" style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "warp",
                 justifyContent: "center",
                 gap: "20px",
                 padding: "20px",
@@ -41,12 +39,11 @@ export default function Aktifitas() {
                         image={activity.image}
                         title={activity.title}
                         description={activity.description}
+                        // width="500px"
                     />
                 ))}
             </div>
             <ContactSection />
-            <footer className="footer">
-            </footer>
         </div>
     );
 }

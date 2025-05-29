@@ -1,9 +1,12 @@
 import Image from "next/image";
 
-export default function ActivityCard({ image, title, description }) {
+export default function ActivityCard({ image, title, description, width}) {
+    if (!width) {
+        width="300px";
+    }
     return (
         <div style={{
-            width: "300px",
+            width: width,
             border: "1px solid #ddd",
             borderRadius: "8px",
             overflow: "hidden",

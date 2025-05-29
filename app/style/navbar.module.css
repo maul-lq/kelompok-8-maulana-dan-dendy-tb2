@@ -72,7 +72,7 @@
 }
 
 .active {
-    background-color: #535275;
+    background-color: #50813c;
     color: #fafafa;
     /* // create font to underline style */
     font-style: oblique;
@@ -80,6 +80,6 @@
 
 .nav ul li a:hover {
     border-radius: 5px;
-    background-color: #34495e;
+    background-color: #345e46;
     color: #5fd39f;
 }

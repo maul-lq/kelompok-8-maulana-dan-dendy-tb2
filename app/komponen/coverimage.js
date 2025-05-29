@@ -25,7 +25,7 @@ export default function displayCoverImg(imageURL, height = "100vh", props = {}) 
                 alt="ikon"
                 className={styles.bgimage}
                 fill
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", filter: "brightness(0.7)"}}
             />
             <div style={{
                 maxWidth: "800px",
@@ -34,6 +34,7 @@ export default function displayCoverImg(imageURL, height = "100vh", props = {}) 
             }}>
                 <h2 style={{
                     color: "white",
+                    marginTop: "2em"
                 }}>
                     {topAtr}
                 </h2>
