@@ -1,4 +1,4 @@
-import Navbar from "../navbar";
+import Navbar from "../komponen/navbar";
 
 export default function CampingGround() {
     return (

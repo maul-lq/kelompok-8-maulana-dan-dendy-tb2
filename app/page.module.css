@@ -1,7 +1,17 @@
 .bgimage {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 25%;
     width: 100%;
     position: relative;
+    z-index: -1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* padding: 20px; */
 }
