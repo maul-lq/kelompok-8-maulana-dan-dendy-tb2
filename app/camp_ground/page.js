@@ -22,7 +22,7 @@ export default function CampingGround() {
                 })}
             <div className="activities-container" style={{
                 display: "flex",
-                flexWrap: "warp",
+                flexWrap: "wrap",
                 justifyContent: "center",
                 gap: "20px",
                 padding: "20px",
