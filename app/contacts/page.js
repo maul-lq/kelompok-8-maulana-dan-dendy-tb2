@@ -7,7 +7,7 @@ export default function Contacts() {
     return (
         <div className="page">
             <Navbar activeIndex={3} />
-            {displayCoverImg("/kontak-kami.webp", "35vh",
+            {displayCoverImg("/tugas-besar-2/kontak-kami.webp", "35vh",
                 {
                     topAtr: "", title: "Hubungi Kami",
                     bottomAtr: "Taman Wisata Alam Gunung Pancar mempunyai lokasi yang terjangkau yang tidak memakan waktu lama dari Jakarta. Anda bisa menghubungi nomor whatsapp kami untuk meminta informasi lebih lanjut."

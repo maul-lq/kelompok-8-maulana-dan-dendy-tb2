@@ -3,7 +3,7 @@ import styles from "./../page.module.css";
 
 export default function displayCoverImg(imageURL, height = "100vh", props = {}) {
     if (!imageURL) {
-        imageURL = "/bg-masthead.webp"; // Default image if none provided
+        imageURL = "/tugas-besar-2/bg-masthead.webp"; // Default image if none provided
     }
     const { topAtr = "Selamat Datang di Website", title = "Alam Raya Pancar", bottomAtr = "Taman Wisata Alam Gunung Pancar menyediakan keindahan alam pegunungan dengan hutan pinus yang rindang. Terletak hanya beberapa jam dari Jakarta, kami menawarkan destinasi sempurna bagi Anda yang ingin melepas penat dan kembali menyatu dengan alam." } = props;
 
