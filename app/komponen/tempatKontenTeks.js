@@ -45,7 +45,7 @@ export default function TempatKonetenTeks(props = {}) {
                 border: "none",
                 borderRadius: "5px",
                 cursor: "pointer"
-            }} href={(addr=="" || !addr) ? "":"/camp_ground"}>
+            }} href={(addr=="" || !addr) ? "":"/tugas-besar-2/camp_ground"}>
                 {addr}
             </a>
         </div>
