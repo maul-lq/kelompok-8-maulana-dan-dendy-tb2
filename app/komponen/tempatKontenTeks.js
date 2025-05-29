@@ -1,7 +1,7 @@
 export default function TempatKonetenTeks(props = {}) {
     const {title= "Kenapa Harus Gunung Pancar?", 
         desc="Di sini, Anda bisa merasakan ketenangan yang jarang ditemukan di tempat lain. Udara segar, suara gemericik air, dan hijaunya pepohonan akan menyambut Anda sejak pertama kali menginjakkan kaki. Taman Wisata Alam Gunung Pancar menyediakan berbagai fasilitas, mulai dari camping ground, jalur trekking, hingga tempat berendam di pemandian air panas alami.",
-    addr="LIHAT PAKET &gt;"} = props;
+    addr="LIHAT PAKET >"} = props;
     return (
         <div style={{
             width: "100%",
