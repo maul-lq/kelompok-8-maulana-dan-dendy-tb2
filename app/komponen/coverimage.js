@@ -1,12 +1,17 @@
 import Image from "next/image";
 import styles from "./../page.module.css";
 
-export default function displayCoverImg() {
+export default function displayCoverImg(imageURL, height = "100vh", props = {}) {
+    if (!imageURL) {
+        imageURL = "/bg-masthead.webp"; // Default image if none provided
+    }
+    const { topAtr = "Selamat Datang di Website", title = "Alam Raya Pancar", bottomAtr = "Taman Wisata Alam Gunung Pancar menyediakan keindahan alam pegunungan dengan hutan pinus yang rindang. Terletak hanya beberapa jam dari Jakarta, kami menawarkan destinasi sempurna bagi Anda yang ingin melepas penat dan kembali menyatu dengan alam." } = props;
+
     return (
         <div style={{
             position: "relative",
             width: "100%",
-            height: "100vh",
+            height: height,
             textAlign: "center",
             backgroundColor: "#00000033",
             display: "flex",
@@ -16,7 +21,7 @@ export default function displayCoverImg() {
             // gap: "20em"
         }}>
             <Image
-                src="/bg-masthead.webp"
+                src={imageURL}
                 alt="ikon"
                 className={styles.bgimage}
                 fill
@@ -30,7 +35,7 @@ export default function displayCoverImg() {
                 <h2 style={{
                     color: "white",
                 }}>
-                    Selamat Datang di Website
+                    {topAtr}
                 </h2>
                 <h1 style={{
                     color: "white",
@@ -38,17 +43,14 @@ export default function displayCoverImg() {
                     fontSize: "3rem",
                     marginBlock: "1rem"
                 }}>
-                    Alam Raya Pancar
+                    {title}
                 </h1>
                 <p style={{
                     color: "white",
                     fontSize: "1.5rem",
                     textAlign: "justify"
                 }}>
-                    Taman Wisata Alam Gunung Pancar menyediakan keindahan alam 
-                    pegunungan dengan hutan pinus yang rindang. Terletak hanya
-                    beberapa jam dari Jakarta, kami menawarkan destinasi sempurna
-                    bagi Anda yang ingin melepas penat dan kembali menyatu dengan alam.
+                    {bottomAtr}
                 </p>
             </div>
         </div>
