@@ -13,9 +13,7 @@
 
 .header {
     background-color: transparent;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    color: var(--foreground);
+    color: #dedede;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -47,7 +45,7 @@
 .headerTitle {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--foreground);
+    color: #fafafa;
 }
 
 .headerImg {
@@ -69,7 +67,7 @@
 }
 
 .nav ul li a {
-    color: var(--foreground);
+    color: #dedede;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
@@ -104,20 +102,7 @@
         right: 0;
         background: rgba(30,30,30,0.7); /* semi-transparan untuk mobile menu */
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
     }
-}
-.nav ul.open {
-    display: flex;
-}
-.nav ul li {
-    width: 100%;
-}
-.nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 15px 20px;
 }
 
 @media (max-width: 600px) {

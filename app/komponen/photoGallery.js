@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 export default function PhotoGallery() {
     const images = [
-        "/tugas-besar-2/gal/camping.jpg",
-        "/tugas-besar-2/gal/outbond.jpg",
-        "/tugas-besar-2/gal/paintball.jpg",
-        "/tugas-besar-2/gal/shooting.jpg",
-        "/tugas-besar-2/gal/tracking.jpg",
-        "/tugas-besar-2/gal/wedding.jpg",
+        "/gal/camping.jpg",
+        "/gal/outbond.jpg",
+        "/gal/paintball.jpg",
+        "/gal/shooting.jpg",
+        "/gal/tracking.jpg",
+        "/gal/wedding.jpg",
     ];
 
     return (

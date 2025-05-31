@@ -12,7 +12,7 @@ export default function Navbar({ activeIndex }) {
             <header className={style.header}>
                 <div className={style.navbarContent}>
                     <div className={style.logoTitle}>
-                        <Image style={{ borderRadius: "100%" }} src="/tugas-besar-2/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} />
+                        <Image style={{ borderRadius: "100%" }} src="/gambar.jpeg" alt="ikon" className={style.headerImg} width={65} height={65} />
                         <h1 className={style.headerTitle}>Tempat Wisata Alam</h1>
                     </div>
                     <nav className={style.nav}>

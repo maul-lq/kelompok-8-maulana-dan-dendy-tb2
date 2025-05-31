@@ -8,7 +8,7 @@ export default function ContactSection() {
             position: "relative",
             width: "100%",
             padding: "50px 20px",
-            backgroundColor: "var(--background)"
+            backgroundColor: "var(--content-bg-2)"
         }}>
             <div className="contact-section-inner" style={{
                 position: "relative",
@@ -20,31 +20,31 @@ export default function ContactSection() {
                 padding: "20px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                background: "var(--background)"
+                background: "var(--content-bg-2)"
             }}>
                 <div style={{ flex: 1 }}>
                     <h2 style={{
                         fontSize: "1.8rem",
                         fontWeight: "bold",
-                        color: "var(--foreground)",
+                        color: "var(--content-bg-1)",
                         marginBottom: "1rem"
                     }}>
                         Hubungi Kami
                     </h2>
                     <h3 style={{
                         fontSize: "1.2rem",
-                        color: "var(--foreground)",
+                        color: "var(--content-bg-1",
                         fontWeight: "bold",
                         marginBottom: "0.5rem"
                     }}>
                         Base Camp & Reservation
                     </h3>
-                    <p style={{ fontSize: "1rem", color: "var(--foreground)", lineHeight: "1.6", marginBottom: "1rem" }}>
+                    <p style={{ fontSize: "1rem", color: "var(--content-bg-1", lineHeight: "1.6", marginBottom: "1rem" }}>
                         TWA Gunung Pancar, Kp. Ciburial RT. 3/3<br />
                         Desa Karang Tengah Kec. Babakan Madang<br />
                         Kabupaten Bogor 16810 – Jawa Barat
                     </p>
-                    <p style={{ fontSize: "1rem", color: "var(--foreground)", lineHeight: "1.6" }}>
+                    <p style={{ fontSize: "1rem", color: "var(--content-bg-1", lineHeight: "1.6" }}>
                         📞 0812 8574 5247 – Widiyanto<br />
                         📞 0813 8113 0779 – Fani<br />
                         ✉️ marketing.gunungpancar@gmail.com
@@ -54,17 +54,17 @@ export default function ContactSection() {
                     <h3 style={{
                         fontSize: "1.2rem",
                         fontWeight: "bold",
-                        color: "var(--foreground)",
+                        color: "var(--content-bg-1",
                         marginBottom: "0.5rem"
                     }}>
                         Head Office
                     </h3>
-                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "var(--foreground)", marginBottom: "1rem" }}>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "var(--content-bg-1", marginBottom: "1rem" }}>
                         PT. Wana Wisata Indah<br />
                         Midplaza I Lt. 10, Jl. Jend. Sudirman Kav. 10-11<br />
                         Jakarta 10220
                     </p>
-                    <p style={{ fontSize: "1rem", color: "var(--foreground)", lineHeight: "1.6" }}>
+                    <p style={{ fontSize: "1rem", color: "var(--content-bg-1", lineHeight: "1.6" }}>
                         📞 021-5790 5519 / 5790 5520
                     </p>
                 </div>
@@ -77,7 +77,7 @@ export default function ContactSection() {
                     <h2 style={{
                         fontSize: "1.8rem",
                         fontWeight: "bold",
-                        color: "var(--foreground)",
+                        color: "var(--content-bg-1",
                         marginBottom: "1rem"
                     }}>
                         Lokasi Kami
