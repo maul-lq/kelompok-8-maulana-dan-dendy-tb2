@@ -30,5 +30,8 @@
     }
     .page {
         padding-top: 60px;
+        width: 100vw;
+        min-width: 0;
+        overflow-x: auto;
     }
 }
