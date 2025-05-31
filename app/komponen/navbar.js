@@ -49,7 +49,7 @@ export default function Navbar({ activeIndex }) {
                         position: absolute;
                         top: 70px;
                         right: 0;
-                        background: var(--background);
+                        background: rgba(30,30,30,0.85);
                         width: 200px;
                         display: none;
                         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -65,6 +65,12 @@ export default function Navbar({ activeIndex }) {
                 @media (max-width: 600px) {
                     .${style.headerTitle} {
                         font-size: 1.1rem;
+                    }
+                    nav ul {
+                        width: 100vw;
+                        right: 0;
+                        top: 60px;
+                        padding: 0;
                     }
                 }
             `}</style>

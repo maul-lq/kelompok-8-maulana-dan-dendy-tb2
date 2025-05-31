@@ -128,6 +128,35 @@ export default function ContactSection() {
                         align-items: stretch;
                     }
                 }
+                @media (max-width: 600px) {
+                    .contact-section-root {
+                        padding: 30px 5px;
+                    }
+                    .contact-section-inner {
+                        flex-direction: column;
+                        gap: 18px;
+                        padding: 10px;
+                    }
+                    .contact-section-inner > div {
+                        margin-bottom: 18px;
+                        padding: 0 2px;
+                    }
+                    .contact-section-inner > div:last-child {
+                        margin-bottom: 0;
+                    }
+                    .contact-section-inner h2 {
+                        font-size: 1.2rem !important;
+                    }
+                    .contact-section-inner h3 {
+                        font-size: 1rem !important;
+                    }
+                    .contact-section-inner p {
+                        font-size: 0.95rem !important;
+                    }
+                    iframe {
+                        height: 140px !important;
+                    }
+                }
             `}</style>
         </div>
     );
