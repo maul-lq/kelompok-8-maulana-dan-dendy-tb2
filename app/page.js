@@ -23,7 +23,7 @@ export default function Home() {
       <div style={{ width: "100%", background: "var(--content-bg-1)" }}>
         <ActivitiesSection />
       </div>
-      <div style={{ width: "100%", background: "var(--content-bg-2)" }}>
+      <div style={{ width: "100%", background: "var(--primary)" }}>
         <ContactSection />
       </div>
       <footer className={styles.footer}>
