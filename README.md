@@ -33,7 +33,7 @@ Website ini telah **dideploy di GitHub Pages** dan dapat diakses di:
 
 ## 📸 Preview
 
-![Preview](public/tugas-besar-2/gal/camping.jpg)
+![Preview](public/gal/camping.jpg)
 
 ---
 
