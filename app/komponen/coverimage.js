@@ -4,7 +4,7 @@ import styles from "./../page.module.css";
 
 export default function CoverImage({ imageURL, height = "100vh", topAtr = "Selamat Datang di Website", title = "Alam Raya Pancar", bottomAtr = "Taman Wisata Alam Gunung Pancar menyediakan keindahan alam pegunungan dengan hutan pinus yang rindang. Terletak hanya beberapa jam dari Jakarta, kami menawarkan destinasi sempurna bagi Anda yang ingin melepas penat dan kembali menyatu dengan alam." }) {
     if (!imageURL) {
-        imageURL = "/bg-masthead.webp";
+        imageURL = "/tugas-besar-2/bg-masthead.webp";
     }
     return (
         <div className="cover-image" style={{

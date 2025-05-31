@@ -9,7 +9,7 @@ export default function Contacts() {
             <Navbar activeIndex={3} />
             <div style={{ width: "100%" }}>
                 <CoverImage
-                    imageURL="/kontak-kami.webp"
+                    imageURL="/tugas-besar-2/kontak-kami.webp"
                     height="35vh"
                     topAtr=""
                     title="Hubungi Kami"
