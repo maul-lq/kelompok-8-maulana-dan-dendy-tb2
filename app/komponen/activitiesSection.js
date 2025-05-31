@@ -1,3 +1,5 @@
+"use client";
+
 export default function ActivitiesSection() {
     const activities = [
         { icon: "🎒", title: "Camping", description: "Nikmati pengalaman berkemah di tengah alam yang asri dan sejuk." },
