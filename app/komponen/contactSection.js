@@ -10,6 +10,7 @@ export default function ContactSection() {
                 position: "relative",
                 width: "100%",
                 padding: "50px 20px",
+                overflowX: "auto" // Tambahkan ini agar tidak terpotong di mobile
             }}
         >
             <div className="contact-section-inner" style={{
@@ -22,6 +23,7 @@ export default function ContactSection() {
                 padding: "20px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                maxWidth: "100%" // Pastikan tidak melebihi parent
             }}>
                 <div style={{ flex: 1 }}>
                     <h2 style={{

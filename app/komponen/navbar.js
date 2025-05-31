@@ -72,6 +72,15 @@ export default function Navbar({ activeIndex }) {
                         top: 60px;
                         padding: 0;
                     }
+                    .${style.header} {
+                        width: 100vw;
+                        min-width: 0;
+                        left: 0;
+                    }
+                    .${style.navbarContent} {
+                        width: 100vw;
+                        min-width: 0;
+                    }
                 }
             `}</style>
         </div >
