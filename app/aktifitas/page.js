@@ -1,5 +1,5 @@
 import Navbar from "../komponen/navbar";
-import displayCoverImg from "../komponen/coverimage";
+import CoverImage from "../komponen/coverimage";
 import ActivityCard from "../komponen/activitycard";
 import ContactSection from "../komponen/contactSection";
 
@@ -21,10 +21,13 @@ export default function Aktifitas() {
     return (
         <div className="page">
             <Navbar activeIndex={1} />
-            {displayCoverImg("/tugas-besar-2/kontak-kami.webp", "20vh",
-                {
-                    topAtr: "", title: "Aktifitas di Gunung Pancar",
-                    bottomAtr: "TWA Gunung Pancar menyediakan berbagai paket sesuai kebutuhan anda. Jika ingin info lebih jelas bisa menghubungi kontak kami."})}
+            <CoverImage
+                imageURL="/tugas-besar-2/kontak-kami.webp"
+                height="20vh"
+                topAtr=""
+                title="Aktifitas di Gunung Pancar"
+                bottomAtr="TWA Gunung Pancar menyediakan berbagai paket sesuai kebutuhan anda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
+            />
             <div className="activities-container" style={{
                 display: "flex",
                 flexWrap: "wrap",

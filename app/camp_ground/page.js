@@ -1,5 +1,5 @@
 import Navbar from "../komponen/navbar";
-import displayCoverImg from "../komponen/coverimage";
+import CoverImage from "../komponen/coverimage";
 import ActivityCard from "../komponen/activitycard";
 import ContactSection from "../komponen/contactSection";
 
@@ -15,11 +15,13 @@ export default function CampingGround() {
     return (
         <div className="page">
             <Navbar activeIndex={2} />
-            {displayCoverImg("/tugas-besar-2/kontak-kami.webp", "30vh",
-                {
-                    topAtr: "", title: "Camping Ground Wisata Gunung Pancar",
-                    bottomAtr: "TWA Gunung Pancar memiliki berbagai macam camping ground dengan suasana berbeda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
-                })}
+            <CoverImage
+                imageURL="/tugas-besar-2/kontak-kami.webp"
+                height="30vh"
+                topAtr=""
+                title="Camping Ground Wisata Gunung Pancar"
+                bottomAtr="TWA Gunung Pancar memiliki berbagai macam camping ground dengan suasana berbeda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
+            />
             <div className="activities-container" style={{
                 display: "flex",
                 flexWrap: "wrap",
