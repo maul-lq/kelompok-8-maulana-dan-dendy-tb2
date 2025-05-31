@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./komponen/navbar";
-import displayCoverImg from "./komponen/coverimage";
+import CoverImage from "./komponen/coverimage";
 import TempatKonetenTeks from "./komponen/tempatKontenTeks";
 import PhotoGallery from "./komponen/photoGallery";
 import ActivitiesSection from "./komponen/activitiesSection";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Navbar activeIndex={0} />
-      {displayCoverImg()}
+      <CoverImage />
       <TempatKonetenTeks />
       <PhotoGallery />
       <ActivitiesSection />
