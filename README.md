@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌲 Alam Raya Pancar - Wisata Alam Gunung Pancar
 
-## Getting Started
+Selamat datang di **Alam Raya Pancar** — Website resmi Taman Wisata Alam Gunung Pancar, destinasi wisata alam terbaik di Bogor!  
+Nikmati keindahan hutan pinus, udara segar pegunungan, dan berbagai aktivitas seru bersama keluarga, teman, maupun rekan kerja.
 
-First, run the development server:
+---
+
+## 🚀 Website Sudah Online!
+
+Website ini telah **dideploy di GitHub Pages** dan dapat diakses di:  
+👉 [https://your-github-username.github.io/tugas-besar-2/](https://your-github-username.github.io/tugas-besar-2/)
+
+---
+
+## ✨ Fitur Utama
+
+- **Beranda Interaktif**: Menampilkan cover image, galeri foto, dan highlight aktivitas.
+- **Pilihan Aktivitas**: Info lengkap tentang camping, outbound, tracking, wedding, shooting, dan lainnya.
+- **Galeri Foto**: Lihat suasana dan keindahan Gunung Pancar secara visual.
+- **Kontak & Lokasi**: Mudah menghubungi pengelola dan melihat lokasi di Google Maps.
+- **Desain Responsif**: Tampilan optimal di desktop maupun mobile.
+
+---
+
+## 🛠️ Teknologi
+
+- [Next.js](https://nextjs.org) (App Router)
+- CSS Modules & Styled JSX
+- Google Fonts (Geist)
+- Deploy: GitHub Pages
+
+---
+
+## 📸 Preview
+
+![Preview](public/tugas-besar-2/gal/camping.jpg)
+
+---
+
+## 📂 Struktur Halaman
+
+- **Home**: Beranda & pengenalan wisata
+- **Pilihan Aktifitas**: Daftar paket & aktivitas
+- **Camp Ground**: Info area camping
+- **Contacts**: Kontak & lokasi
+
+---
+
+## 📦 Cara Menjalankan Lokal
+
+1. Cari file next.config.mjs
+2. Komen (//) bagian `output: 'export',` menjadi `// output: 'export',`
+3. Kemudian ikuti perintah di prompt dibawah ini
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Buka [http://localhost:3000/tugas-besar-2](http://localhost:3000/tugas-besar-2) di browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> Website ini dibuat untuk memenuhi tugas besar mata kuliah Pemrograman Web, dan sebagai media promosi wisata alam Gunung Pancar.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
