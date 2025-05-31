@@ -11,12 +11,12 @@ export default function PhotoGallery() {
     ];
 
     return (
-        <div style={{
+        <div className="photo-gallery" style={{
             display: "grid",
             width: "100%",
             gridTemplateColumns: "repeat(3, 1fr)",
             gap: "5px",
-            backgroundColor: "#f9f9f9"
+            backgroundColor: "var(--background)"
         }}>
             {images.map((src, index) => (
                 <div key={index} style={{
@@ -29,9 +29,25 @@ export default function PhotoGallery() {
                         layout="responsive"
                         width={500}
                         height={300}
+                        style={{ borderRadius: "8px" }}
                     />
                 </div>
             ))}
+            <style jsx>{`
+                .photo-gallery {
+                    transition: background 0.3s;
+                }
+                @media (max-width: 900px) {
+                    .photo-gallery {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                @media (max-width: 600px) {
+                    .photo-gallery {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            `}</style>
         </div>
     );
 }

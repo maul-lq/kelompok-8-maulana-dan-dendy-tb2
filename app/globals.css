@@ -1,13 +1,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #2ecc71;
+  --secondary: #50813c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    /* --foreground: #ededed; */
-    --foreground: #0a0a0a;
+    --background: #181818;
+    --foreground: #ededed;
+    --primary: #3fa46a;
+    --secondary: #2b2b2b;
   }
 }
 
@@ -30,6 +33,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s;
 }
 
 * {

@@ -12,14 +12,14 @@ export default function ActivitiesSection() {
         <div style={{
             width: "100%",
             padding: "50px 20px",
-            backgroundColor: "#ffffff",
+            backgroundColor: "var(--background)",
             textAlign: "center"
         }}>
             <h2 style={{
                 fontSize: "2rem",
                 fontWeight: "bold",
                 marginBottom: "1rem",
-                color: "#333"
+                color: "var(--foreground)"
             }}>
                 Aktivitas di Gunung Pancar
             </h2>
@@ -29,7 +29,7 @@ export default function ActivitiesSection() {
                 backgroundColor: "#2ecc71",
                 margin: "0 auto 2rem"
             }}></div>
-            <div style={{
+            <div className="activities-grid" style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
                 gap: "20px"
@@ -43,7 +43,9 @@ export default function ActivitiesSection() {
                         padding: "20px",
                         border: "1px solid #e0e0e0",
                         borderRadius: "8px",
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                        background: "var(--background)",
+                        color: "var(--foreground)"
                     }}>
                         <div style={{
                             fontSize: "2.5rem",
@@ -61,13 +63,28 @@ export default function ActivitiesSection() {
                         </h3>
                         <p style={{
                             fontSize: "1rem",
-                            color: "#555"
+                            color: "var(--foreground)"
                         }}>
                             {activity.description}
                         </p>
                     </div>
                 ))}
             </div>
+            <style jsx>{`
+                .activities-grid {
+                    transition: background 0.3s;
+                }
+                @media (max-width: 900px) {
+                    .activities-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                @media (max-width: 600px) {
+                    .activities-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            `}</style>
         </div>
     );
 }
