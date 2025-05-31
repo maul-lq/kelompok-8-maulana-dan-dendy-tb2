@@ -15,32 +15,38 @@ export default function CampingGround() {
     return (
         <div className="page">
             <Navbar activeIndex={2} />
-            <CoverImage
-                imageURL="/tugas-besar-2/kontak-kami.webp"
-                height="30vh"
-                topAtr=""
-                title="Camping Ground Wisata Gunung Pancar"
-                bottomAtr="TWA Gunung Pancar memiliki berbagai macam camping ground dengan suasana berbeda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
-            />
-            <div className="activities-container" style={{
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-                gap: "20px",
-                padding: "20px",
-                backgroundColor: "#fafafa"
-            }}>
-                {activities.map((activity, index) => (
-                    <ActivityCard
-                        key={index}
-                        image={activity.image}
-                        title={activity.title}
-                        description={activity.description}
-                        width="500px"
-                    />
-                ))}
+            <div style={{ width: "100%" }}>
+                <CoverImage
+                    imageURL="/tugas-besar-2/kontak-kami.webp"
+                    height="30vh"
+                    topAtr=""
+                    title="Camping Ground Wisata Gunung Pancar"
+                    bottomAtr="TWA Gunung Pancar memiliki berbagai macam camping ground dengan suasana berbeda. Jika ingin info lebih jelas bisa menghubungi kontak kami."
+                />
             </div>
-            <ContactSection />
+            <div style={{ width: "100%", background: "var(--content-bg-1)" }}>
+                <div className="activities-container" style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    gap: "20px",
+                    padding: "20px",
+                    backgroundColor: "transparent"
+                }}>
+                    {activities.map((activity, index) => (
+                        <ActivityCard
+                            key={index}
+                            image={activity.image}
+                            title={activity.title}
+                            description={activity.description}
+                            width="500px"
+                        />
+                    ))}
+                </div>
+            </div>
+            <div style={{ width: "100%", background: "var(--content-bg-2)" }}>
+                <ContactSection />
+            </div>
         </div>
     );
 }
