@@ -13,5 +13,22 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* padding: 20px; */
+}
+
+@media (max-width: 900px) {
+    .bgimage {
+        height: 35vh;
+    }
+    .page {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bgimage {
+        height: 25vh;
+    }
+    .page {
+        padding-top: 60px;
+    }
 }
