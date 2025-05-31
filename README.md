@@ -8,7 +8,7 @@ Nikmati keindahan hutan pinus, udara segar pegunungan, dan berbagai aktivitas se
 ## 🚀 Website Sudah Online!
 
 Website ini telah **dideploy di GitHub Pages** dan dapat diakses di:  
-👉 [https://your-github-username.github.io/tugas-besar-2/](https://your-github-username.github.io/tugas-besar-2/)
+👉 [https://maul-lq.github.io/tugas-besar-2/](https://maul-lq.github.io/tugas-besar-2/)
 
 ---
 
