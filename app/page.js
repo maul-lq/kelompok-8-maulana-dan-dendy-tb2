@@ -11,11 +11,21 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Navbar activeIndex={0} />
-      <CoverImage />
-      <TempatKonetenTeks />
-      <PhotoGallery />
-      <ActivitiesSection />
-      <ContactSection />
+      <div style={{ width: "100%" }}>
+        <CoverImage />
+      </div>
+      <div style={{ width: "100%", background: "var(--content-bg-1)" }}>
+        <TempatKonetenTeks />
+      </div>
+      <div style={{ width: "100%", background: "var(--content-bg-2)" }}>
+        <PhotoGallery />
+      </div>
+      <div style={{ width: "100%", background: "var(--content-bg-1)" }}>
+        <ActivitiesSection />
+      </div>
+      <div style={{ width: "100%", background: "var(--content-bg-2)" }}>
+        <ContactSection />
+      </div>
       <footer className={styles.footer}>
       </footer>
     </div>

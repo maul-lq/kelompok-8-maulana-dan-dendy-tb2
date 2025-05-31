@@ -3,6 +3,8 @@
   --foreground: #171717;
   --primary: #2ecc71;
   --secondary: #50813c;
+  --content-bg-1: #ffffff;
+  --content-bg-2: #e7f7eb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +13,8 @@
     --foreground: #ededed;
     --primary: #3fa46a;
     --secondary: #2b2b2b;
+    --content-bg-1: #232323;
+    --content-bg-2: #181818;
   }
 }
 
