@@ -60,6 +60,6 @@ Buka [http://localhost:3000/tugas-besar-2](http://localhost:3000/tugas-besar-2) 
 
 ---
 
-> Website ini dibuat untuk memenuhi tugas besar mata kuliah Pemrograman Web, dan sebagai media promosi wisata alam Gunung Pancar.
+> Website ini dibuat untuk memenuhi tugas besar mata kuliah Pemrograman Web, dan sebagai media promosi wisata alam raya Gunung Pancar.
 
 ---
