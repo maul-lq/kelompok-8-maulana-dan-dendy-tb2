@@ -1,4 +1,4 @@
-# 🌲 Alam Raya Pancar - Wisata Alam Gunung Pancar
+# 🌲 Alam Raya Pancar - Wisata Alam Gunung Pancar 
 
 Selamat datang di **Alam Raya Pancar** — Website resmi Taman Wisata Alam Gunung Pancar, destinasi wisata alam terbaik di Bogor!  
 Nikmati keindahan hutan pinus, udara segar pegunungan, dan berbagai aktivitas seru bersama keluarga, teman, maupun rekan kerja kalian.
